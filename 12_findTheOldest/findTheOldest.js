@@ -1,5 +1,6 @@
 const findTheOldest = function(people) {
   people.forEach(element => { 
+    //console.log("yearOfDeath" in element); //here another check if element exist in object
     if (element.yearOfDeath != undefined) {
       element.lives = element.yearOfDeath - element.yearOfBirth;
     }
