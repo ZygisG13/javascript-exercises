@@ -10,7 +10,7 @@ const findTheOldest = function(people) {
 
     });
   //sorting objects from oldest to youngest
-  oldest = people.sort((a,b) => a.lives < b.lives ? 1 : -1)
+  oldest = people.sort((aPerson,bPerson) => aPerson.lives < bPerson.lives ? 1 : -1)
   console.log(oldest[0]);
   return oldest[0]; //return first member of array
 };
